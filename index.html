@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Arvind Chai Tapri</title>
+<script>
+function cal(){
+var a,b,c,d,e,sum,f;
+a = document.getElementById("bc").value;
+b = document.getElementById("cc").value;
+c = document.getElementById("chai").value;
+d = document.getElementById("maggi").value;
+e = document.getElementById("bm").value;
+f = document.getElementById("chips").value;
+sum = ((a*20)+(b*18)+(c*12)+(d*40)+(e*25)+(f*15));
+
+document.getElementById("total").innerHTML = sum;
+}
+</script>
+</head>
+<body>
+<h1>
+Arvind Chai tapri
+</h1>
+<input type ="number" id="bc" placeholder="badi cigarette">
+<input type="number" id="cc" placeholder="choti cigarette">
+<input type="number" id="chai" placeholder="chai">
+<input type="number" id="maggi" placeholder="maggi">
+<input type="number" id="bm" placeholder="bun makkhan">
+<input type="number" id="chips" placeholder="chips">
+<br>
+<br>
+<h4 id="total">
+total rupiya yahin dikhega
+</h4>
+<button onclick="cal()">
+computer ji lock kijiye
+</button>
+</body>
+</html>
