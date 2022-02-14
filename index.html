@@ -1,7 +1,6 @@
 <html>
 <head>
 <title>Arvind Chai Tapri</title>
-
 <script>
 function cal(){
 var a,b,c,d,e,sum,f;
@@ -15,11 +14,21 @@ sum = ((a*20)+(b*18)+(c*12)+(d*40)+(e*25)+(f*15));
 
 document.getElementById("total").innerHTML = sum;
 }
+
+function blank(){
+    document.getElementById("bc").innerHTML = 0;
+    document.getElementById("cc").innerHTML = 0;
+    document.getElementById("chai").innerHTML = 0;
+    document.getElementById("maggi").innerHTML = 0;
+    document.getElementById("bm").innerHTML = 0;
+    document.getElementById("chips").innerHTML = 0;
+    document.getElementById("total").innerHTML = 0;
+}
 </script>
 </head>
 <body>
 <h1>
-Arvind Chai Tapri
+Arvind Chai tapri
 </h1>
 <p>20 rupaye wali cigarette</p>
 <input type ="number" id="bc" placeholder="badi cigarette">
@@ -33,7 +42,7 @@ Arvind Chai Tapri
 <p>maggi</p>
 <input type="number" id="maggi" placeholder="maggi">
 <br>
-<p>Bun Makkhan</p>
+<p>Bun Makkhar</p>
 <input type="number" id="bm" placeholder="bun makkhan">
 <br>
 <p>Chips</p>
@@ -46,5 +55,6 @@ total rupiya yahin dikhega..
 <button onclick="cal()">
 computer ji lock kijiye
 </button>
+<button onclick="blank()">Empty Fields</button>
 </body>
 </html>
