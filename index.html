@@ -16,6 +16,7 @@ sum = ((a*20)+(b*18)+(c*12)+(d*40)+(e*25)+(f*15));
 
 document.getElementById("total").innerHTML = sum;
 document.getElementById("totalamount").innerHTML = sum;
+subs();
 
 }
 
@@ -32,11 +33,13 @@ function subs(){
     p9= document.getElementById("pp9").value;
     total_Submit=((p1*1)+(p2*1)+(p3*1)+(p4*1)+(p5*1)+(p6*1)+(p7*1)+(p8*1)+(p9*1))
     rem=sum-total_Submit;
-    document.getElementById("totalamount").innerHTML = rem;
+    document.getElementById("totalamount").innerHTML = ("Remaining Balance : "+rem);
 
 }
 
 function blank(){
+    rem=0;
+    document.getElementById("totalamount").innerHTML = ("Remaining Balance : "+rem);
     console.log("empty fields ran");
     document.getElementById("bc").value = '';
     document.getElementById("cc").value = '';
@@ -91,10 +94,9 @@ Total rupiya yahin dikhega..
 
   </div>
 <br>
-    <br>
+<br>
   <h1>Let's Split Dude</h1>
-    
-    <br>
+  <br>
   <h3 id="totalamount"></h3>
     <div class="mb-3">
         <label for="exampleFormControlInput1" class="form-label">Person 1</label>
